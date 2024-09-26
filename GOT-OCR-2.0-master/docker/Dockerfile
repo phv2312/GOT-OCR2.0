@@ -13,6 +13,7 @@ RUN apt-get update -qqy && \
       libxrender1 \
       locales \
       curl \
+      unzip \
       && \
     apt-get clean && \
     apt-get autoremove

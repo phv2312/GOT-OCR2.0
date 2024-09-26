@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eo pipefail
+
 # Define the expected file name
 EXPECTED_FILE="GOT_weights.zip"
 EXTRACTED_DIR="weights" 
