@@ -70,7 +70,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           file: GOT-OCR-2.0-master/docker/Dockerfile
-          context: GOT-OCR-2.0-master/docker
+          context: GOT-OCR-2.0-master
           push: true
           platforms: linux/amd64
           tags: |
