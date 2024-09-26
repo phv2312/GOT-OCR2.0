@@ -26,4 +26,11 @@ RUN pip install -r requirements.lock --no-deps
 # Remove cache
 RUN rm -rf ~/.cache
 
+# Copy entire dir
+COPY . /app
 
+# Download weights
+RUN bash scripts/download_weights.sh
+
+# Serving
+CMD ["bash", "scripts/webapp_start.sh"]
