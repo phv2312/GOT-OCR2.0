@@ -87,6 +87,12 @@ pip install flash-attn --no-build-isolation
 - [Google Drive](https://drive.google.com/drive/folders/1OdDtsJ8bFJYlNUzCQG4hRkUL6V-qBQaN?usp=sharing)
 - [BaiduYun](https://pan.baidu.com/s/1G4aArpCOt6I_trHv_1SE2g) code: OCR2
 
+4. Install Locked Requirements
+
+Alternative way to install the requirements can be:
+```
+pip install -r requirements.lock --no-deps
+```
 
 ## Demo
 1. plain texts OCR:
