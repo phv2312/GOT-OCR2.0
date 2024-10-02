@@ -22,6 +22,11 @@ if [ ! -f "$EXTRACTED_DIR" ]; then
         # Unzip the downloaded file
         unzip "$EXPECTED_FILE" -d "$EXTRACTED_DIR"
         echo "Unzipping completed."
+
+        # Delete the zip file after unzipping
+        rm "$EXPECTED_FILE"
+        echo "Deleted $EXPECTED_FILE."
+        
     else
         echo "Download failed. Exiting..."
         exit 1
